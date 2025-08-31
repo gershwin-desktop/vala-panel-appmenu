@@ -211,7 +211,6 @@ namespace Appmenu
                 if (type == ModelType.NONE && window.get_window_type() == Wnck.WindowType.DESKTOP)
                 {
                     this.active_window = win;
-                    this.type = ModelType.DESKTOP;
                 }
                 if (type == ModelType.NONE)
                 {
@@ -227,7 +226,7 @@ namespace Appmenu
             if (type == ModelType.NONE)
             {
                 this.active_window = null;
-                type = ModelType.DESKTOP;
+                type = ModelType.NONE;
             }
             return;
         }
